@@ -11,20 +11,12 @@ from models.experimental import attempt_load
 from utils.general import non_max_suppression, scale_coords, xyxy2xywh
 from utils.torch_utils import select_device
 from picamera2 import Picamera2
-from line_notify import msgWithPic  # Assuming you have a function for Line notification
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import db
 from datetime import datetime
 import base64
 #import L76X
 
 # Initialize Firebase Realtime Database
-cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://wildfiredb-a5678-default-rtdb.asia-southeast1.firebasedatabase.app/'
-})
-ref = db.reference('detections')
+
 
 
 class CameraApp(QWidget):
