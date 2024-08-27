@@ -1,7 +1,7 @@
 import cv2
 
 # เปิดกล้อง
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 # ตรวจสอบว่ากล้องเปิดได้หรือไม่
 if not cap.isOpened():

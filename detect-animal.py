@@ -4,7 +4,7 @@ import numpy as np
 from yolov5 import YOLOv5
 
 # โหลดโมเดลจากไฟล์
-model = YOLOv5('/Users/march/Documents/GitHub/yolov5/runs/train/exp/weights/best.pt')
+model = YOLOv5('/Users/march/Documents/GitHub/yolov5/detect-animal/runs/train/exp/weights/best.pt')
 
 
 
